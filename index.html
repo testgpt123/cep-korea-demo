@@ -10,18 +10,36 @@
     body {
       font-family: 'Pretendard', sans-serif;
       margin: 0;
-      padding: 0;
       background-color: #fff;
+    }
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+      background-color: white;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+      border-bottom: 1px solid #eee;
+    }
+    .header a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #111;
+      font-weight: 500;
     }
     .hero {
       background: url('./images/cep-banner-core-run-socks-1920x746px.jpg') no-repeat center center/cover;
-      height: 80vh;
+      height: 90vh;
       color: white;
       display: flex;
       align-items: center;
       justify-content: center;
       text-align: center;
       position: relative;
+      margin-top: 80px;
     }
     .hero::before {
       content: "";
@@ -94,10 +112,27 @@
 </head>
 <body>
 
+  <!-- Header -->
+  <div class="header">
+    <div><strong>CEP</strong></div>
+    <div>
+      <a href="#">MEN</a>
+      <a href="#">WOMEN</a>
+      <a href="#">SALE</a>
+    </div>
+    <div>
+      <a href="#">LOGIN</a>
+      <a href="#">WISHLIST</a>
+      <a href="#">KO/EN</a>
+    </div>
+  </div>
+
+  <!-- Hero Section -->
   <div class="hero">
     <h1>ENGINEERED IN GERMANY</h1>
   </div>
 
+  <!-- Run Better -->
   <div class="section">
     <div class="run-better">
       <div>
@@ -111,6 +146,7 @@
     </div>
   </div>
 
+  <!-- New Arrivals -->
   <div class="section">
     <h2 class="section-title">NEW ARRIVALS</h2>
     <div class="products">
@@ -137,6 +173,7 @@
     </div>
   </div>
 
+  <!-- Categories -->
   <div class="section">
     <h2 class="section-title">DISCOVER COMPRESSION FOR YOUR SPORT</h2>
     <div class="categories">
