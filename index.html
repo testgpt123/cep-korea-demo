@@ -4,50 +4,51 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>CEP Product Listing Page</title>
-  <link rel="stylesheet" href="styles/style.css" />
+  <title>CEP Korea Clone</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header>
-    <img src="images/logo.png" alt="CEP Logo" class="logo" />
-    <nav>
-      <a href="#">MEN</a>
-      <a href="#">WOMEN</a>
-      <a href="#">SALE</a>
-      <a href="#">SPORT</a>
-      <a href="#">COMPRESSION</a>
-      <a href="#">ABOUT CEP</a>
-    </nav>
+  <header class="header">
+    <div class="container">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/4/43/CEP_logo.svg" alt="CEP Logo" class="logo"/>
+      <nav class="nav">
+        <a href="#">MEN</a>
+        <a href="#">WOMEN</a>
+        <a href="#">SALE</a>
+        <a href="#">SPORT</a>
+        <a href="#">COMPRESSION</a>
+        <a href="#">ABOUT CEP</a>
+      </nav>
+      <div class="icons">
+        <span>🔍</span>
+        <span>🤍</span>
+        <span>🛍️</span>
+        <span>☰</span>
+      </div>
+    </div>
   </header>
-  <main>
-    <h1>Knee Socks for Men for Sports</h1>
-    <aside class="filters">
-      <details><summary>Gender</summary></details>
-      <details><summary>Size</summary></details>
-      <details><summary>Sport</summary></details>
-      <details><summary>Color</summary></details>
-      <details><summary>Product Type</summary></details>
-      <details><summary>Price</summary></details>
-      <details><summary>Technology</summary></details>
-      <details><summary>Seasons</summary></details>
-      <details><summary>Material</summary></details>
-      <details><summary>Damping</summary></details>
-    </aside>
-    <section class="product-grid">
-      <div class="product">
-        <img src="images/1.jpg" alt="CEP Socks 1"/>
-        <p>Core Run Socks Tall Men</p>
-        <p>55.00 €</p>
-      </div>
-      <div class="product">
-        <img src="images/2.jpg" alt="CEP Socks 2"/>
-        <p>Pro Run Ultralight Socks</p>
-        <p>65.00 €</p>
-      </div>
-    </section>
-  </main>
-  <footer>
-    <p>&copy; 2025 CEP Sports</p>
+
+  <section class="hero">
+    <h1>CORE RUN COLLECTION</h1>
+    <p>ENTDECKE DIE NEUE CEP KOLLEKTION</p>
+    <div class="hero-buttons">
+      <button>SHOP MEN ⟶</button>
+      <button>SHOP WOMEN ⟶</button>
+    </div>
+  </section>
+
+  <section class="new-arrivals">
+    <h2>NEW ARRIVALS</h2>
+    <div class="grid">
+      <div class="box">DISCOVER COMPRESSION FOR YOUR SPORT</div>
+      <div class="box">Bestsellers</div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 CEP Korea. All rights reserved.</p>
+    </div>
   </footer>
 </body>
 </html>
