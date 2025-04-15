@@ -138,6 +138,75 @@
       }
     }
 
+  
+  <style>
+    .mobile-header {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000;
+      justify-content: space-between;
+      align-items: center;
+      height: 64px;
+      padding: 0 20px;
+      background-color: white;
+      border-bottom: 1px solid #eee;
+    }
+
+    .mobile-header img {
+      height: 24px;
+    }
+
+    .mobile-icons {
+      display: flex;
+      gap: 20px;
+      font-size: 20px;
+      align-items: center;
+    }
+
+    .mobile-menu-toggle {
+      cursor: pointer;
+      font-size: 22px;
+      font-weight: bold;
+    }
+
+    .mobile-menu {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 64px;
+      left: 0;
+      width: 100%;
+      background-color: white;
+      border-top: 1px solid #eee;
+      z-index: 999;
+    }
+
+    .mobile-menu a {
+      padding: 16px 20px;
+      border-bottom: 1px solid #eee;
+      text-decoration: none;
+      color: #111;
+      font-weight: 600;
+      font-size: 14px;
+    }
+
+    body {
+      padding-top: 64px;
+    }
+
+    @media (max-width: 768px) {
+      .header {
+        display: none;
+      }
+      .mobile-header {
+        display: flex;
+      }
+    }
+  </style>
+
   </style>
 </head>
 <body>
@@ -231,7 +300,107 @@
       display: flex;
     }
   }
-</style>
+
+  <style>
+    .mobile-header {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000;
+      justify-content: space-between;
+      align-items: center;
+      height: 64px;
+      padding: 0 20px;
+      background-color: white;
+      border-bottom: 1px solid #eee;
+    }
+
+    .mobile-header img {
+      height: 24px;
+    }
+
+    .mobile-icons {
+      display: flex;
+      gap: 20px;
+      font-size: 20px;
+      align-items: center;
+    }
+
+    .mobile-menu-toggle {
+      cursor: pointer;
+      font-size: 22px;
+      font-weight: bold;
+    }
+
+    .mobile-menu {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 64px;
+      left: 0;
+      width: 100%;
+      background-color: white;
+      border-top: 1px solid #eee;
+      z-index: 999;
+    }
+
+    .mobile-menu a {
+      padding: 16px 20px;
+      border-bottom: 1px solid #eee;
+      text-decoration: none;
+      color: #111;
+      font-weight: 600;
+      font-size: 14px;
+    }
+
+    body {
+      padding-top: 64px;
+    }
+
+    @media (max-width: 768px) {
+      .header {
+        display: none;
+      }
+      .mobile-header {
+        display: flex;
+      }
+    }
+  </style>
+
+  </style>
+
+<script>
+  function toggleMobileMenu() {
+    const menu = document.getElementById("mobile-menu");
+    menu.style.display = (menu.style.display === "flex") ? "none" : "flex";
+  }
+</script>
+
+<!-- MOBILE HEADER -->
+<div class="mobile-header">
+  <img src="./images/CEP-Logotype-DigitalRGB-Black-6400px.png" alt="CEP Logo">
+  <div class="mobile-icons">
+    <span>🔍</span>
+    <span>🤍</span>
+    <span>🛍️</span>
+    <span class="mobile-menu-toggle" onclick="toggleMobileMenu()">☰</span>
+  </div>
+</div>
+
+<!-- MOBILE MENU -->
+<div id="mobile-menu" class="mobile-menu">
+  <a href="#">MEN</a>
+  <a href="#">WOMEN</a>
+  <a href="#">SALE</a>
+  <a href="#">SPORT</a>
+  <a href="#">COMPRESSION</a>
+  <a href="#">ABOUT CEP</a>
+  <a href="#">REGISTER</a>
+  <a href="#">DE</a>
+</div>
+
 
 <script>
   function toggleMobileMenu() {
@@ -264,6 +433,7 @@
 </div>
 
 </body>
+
 </html>
 
   <!-- RUN BETTER SECTION -->
@@ -365,7 +535,107 @@
       display: flex;
     }
   }
-</style>
+
+  <style>
+    .mobile-header {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000;
+      justify-content: space-between;
+      align-items: center;
+      height: 64px;
+      padding: 0 20px;
+      background-color: white;
+      border-bottom: 1px solid #eee;
+    }
+
+    .mobile-header img {
+      height: 24px;
+    }
+
+    .mobile-icons {
+      display: flex;
+      gap: 20px;
+      font-size: 20px;
+      align-items: center;
+    }
+
+    .mobile-menu-toggle {
+      cursor: pointer;
+      font-size: 22px;
+      font-weight: bold;
+    }
+
+    .mobile-menu {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 64px;
+      left: 0;
+      width: 100%;
+      background-color: white;
+      border-top: 1px solid #eee;
+      z-index: 999;
+    }
+
+    .mobile-menu a {
+      padding: 16px 20px;
+      border-bottom: 1px solid #eee;
+      text-decoration: none;
+      color: #111;
+      font-weight: 600;
+      font-size: 14px;
+    }
+
+    body {
+      padding-top: 64px;
+    }
+
+    @media (max-width: 768px) {
+      .header {
+        display: none;
+      }
+      .mobile-header {
+        display: flex;
+      }
+    }
+  </style>
+
+  </style>
+
+<script>
+  function toggleMobileMenu() {
+    const menu = document.getElementById("mobile-menu");
+    menu.style.display = (menu.style.display === "flex") ? "none" : "flex";
+  }
+</script>
+
+<!-- MOBILE HEADER -->
+<div class="mobile-header">
+  <img src="./images/CEP-Logotype-DigitalRGB-Black-6400px.png" alt="CEP Logo">
+  <div class="mobile-icons">
+    <span>🔍</span>
+    <span>🤍</span>
+    <span>🛍️</span>
+    <span class="mobile-menu-toggle" onclick="toggleMobileMenu()">☰</span>
+  </div>
+</div>
+
+<!-- MOBILE MENU -->
+<div id="mobile-menu" class="mobile-menu">
+  <a href="#">MEN</a>
+  <a href="#">WOMEN</a>
+  <a href="#">SALE</a>
+  <a href="#">SPORT</a>
+  <a href="#">COMPRESSION</a>
+  <a href="#">ABOUT CEP</a>
+  <a href="#">REGISTER</a>
+  <a href="#">DE</a>
+</div>
+
 
 <script>
   function toggleMobileMenu() {
@@ -398,4 +668,5 @@
 </div>
 
 </body>
+
 </html>
